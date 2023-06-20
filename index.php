@@ -6,7 +6,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body class="container">
+
+<form class="text-center">
+    
+<input type="radio" id="parking" name="parcheggio" value="parking"
+          >
+      <label for="parking">parking</label>
+
+
+      <input type="radio" id="noparking" name="parcheggio" value="noparking"
+             >
+      <label for="noparking">No parking</label>
+  
+      <input type="submit">
+</form>
+
+
 <table class="table">
   <thead>
     <tr>
