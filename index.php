@@ -1,4 +1,25 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Descrizione</th>
+      <th scope="col">Parcheggio</th>
+      <th scope="col">Votazione</th>
+      <th scope="col">Distanza dal centro</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <?php
 
 $hotels = [
 
@@ -41,33 +62,35 @@ $hotels = [
 ];
 
 
-// echo "<ul>";
-// foreach ($hotels as $hotel) {
-    
-//     echo "<li>" . $hotel["name"] . " " 
-//         . $hotel["description"] .  "</li>";
-// }
-// echo "</ul>";
-
-
-
-
-
-// echo "<br /><br />";
-
-
-
 
 foreach ($hotels as $hotel) {
-    echo "<ul>";
-    foreach ($hotel as $htl) {
-       
-        echo "<li>" . $htl . " " 
-         .  "</li>";
-
-       
-    }
-
-    echo "</ul>";
- 
+    
+    echo "<tr>";
+        echo "<td>" . $hotel["name"] . "</td>";
+        echo "<td>" . $hotel["description"] . "</td>";
+        echo "<td>" . $hotel["parking"] . "</td>";
+        echo "<td>" . $hotel["vote"] . "</td>";
+        echo "<td>" . $hotel["distance_to_center"] . "</td>";
+    echo "</tr>";
 }
+
+
+?>
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
